@@ -65,7 +65,6 @@ function Header() {
                             </>
                         )
                     }
-                        {/* <p>Sign In</p> */}
                     </div>
                        
                 </Link>
