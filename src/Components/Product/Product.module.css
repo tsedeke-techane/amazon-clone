@@ -41,17 +41,6 @@
    padding: 10px 0px;
 }
 
-
-
-
-
-
-/* .img_container{
-    width: 100%;
-    object-fit: contain;
-    max-height: 160px;
-    padding: 0px 2px;
-} */
 .products_container{
     position: relative;
     display: grid;
@@ -66,22 +55,6 @@
 }
 
 
-/* .button{
-    
-    font-size: 12px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(255, 165, 0);
-    padding: 5px 80px;
-    margin-left: 15px;
-} 
-*/
-
-/* copy css */
-/* .products_container{
-    max-width: 1200px;
-} */
 .product_container section{
     margin: 0 auto;
     margin-left: auto;

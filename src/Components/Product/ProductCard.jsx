@@ -13,10 +13,7 @@ function ProductCard({product,flex,renderAdd,desc}) {
 
     const [state,dispatch] = useContext(DataContext)
 
-    // console.log(state)
-    // const handleRoute = ()=>{
-    //     navigate(`/products/${id}`)
-    // }
+
     let addToCart = ()=>{
         dispatch({
             type:Type.ADD_TO_BASKET,
