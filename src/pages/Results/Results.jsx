@@ -10,7 +10,7 @@ import LayOut from '../../Layout/LayOut'
 function Results() {
   const [results,seResults] = useState([])
   const [isLoading,setIsLoading] = useState(false)
-  const {categoryName} = useParams()
+
   // console.log(useParams())
   useEffect(() => {
     setIsLoading(true)
