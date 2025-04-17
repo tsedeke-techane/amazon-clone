@@ -7,12 +7,12 @@ import Product from '../../Components/Product/Product'
 function Landing() {
   return (
     <LayOut>
-    <>
-      <CarouselEffect />
-      <Category />
-      <Product />
+      <>
+        <CarouselEffect />
+        <Category />
+        <Product />
       </>
-     </LayOut>
+    </LayOut>
   )
 }
 

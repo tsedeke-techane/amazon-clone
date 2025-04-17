@@ -1,5 +1,5 @@
 import React from 'react'
-import { BeatLoader } from 'react-spinners'
+import { MoonLoader } from 'react-spinners'
 
 function Loader() {
   return (
@@ -10,7 +10,7 @@ function Loader() {
         justifyContent:"center",
         height:"50vh"
     }}>
-      <BeatLoader />
+      <MoonLoader />
     </div>
   )
 }
