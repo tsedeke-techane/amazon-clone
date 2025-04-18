@@ -11,12 +11,12 @@ import { DataContext } from '../DataProvider/DataProvider';
 import { auth } from '../../Utility/firebase'
 
 function Header() {
+
     const [{basket,user},dispatch] = useContext(DataContext)
-    const totalItem = basket?.reduce((amount,item)=>{
-        return item.amount +amount
-    },0)
-    
-    console.log("here is my basket:-",basket)
+        const totalItem = basket?.reduce((amount,item)=>{
+        return item.amount + amount
+        },0)
+
   return (
     <section className={classes.fixed}>
       <section>
