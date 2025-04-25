@@ -10,6 +10,6 @@ const ProtectedRoute = ({children,msg,redirect}) => {
         }
     },[user])
   return children
-}
+} 
 
 export default ProtectedRoute

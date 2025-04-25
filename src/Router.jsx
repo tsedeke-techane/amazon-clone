@@ -12,7 +12,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
 // Stripe public key
-const stripePromise = loadStripe("pk_test_51Q0sZLA7KsFf5YYB14hGAubGWk5mxCO4QCuegYhFLDMaCuA7Q1dnj9tZ7VXDdcZ2aaZQi4sRZtXyalNsOEzeEHeX00tujhBuZX");
+const stripePromise = loadStripe("process.env.VITE_STRIPE_PUBLIC_KEY");
 
 function Routing() {
   return (
@@ -29,7 +29,7 @@ function Routing() {
         <Route
           path="/payments"
           element={
-            <ProtectedRoute msg="You must login to pay" redirect="/auth">
+            <ProtectedRoute msg="You must login to pay" redirect="/payments">
               <Elements stripe={stripePromise}>
                 <Payment />
               </Elements>
@@ -40,7 +40,7 @@ function Routing() {
         <Route
           path="/orders"
           element={
-            <ProtectedRoute msg="You must login to access your orders" redirect="/auth">
+            <ProtectedRoute msg="You must login to access your orders" redirect="/orders">
               <Elements stripe={stripePromise}>
                 <Orders />
               </Elements>
